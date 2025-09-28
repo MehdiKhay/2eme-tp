@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gestion des taches</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 500px;
+            margin: 50px ;
+            padding: 20px;
+        }
+        #cont {
+            display: flex;
+            margin-bottom: 20px;
+        }
+        #inp {
+            flex: 1;
+            padding: 10px;
+            font-size: 16px;
+        }
+        button {
+            padding: 10px 15px;
+            cursor: pointer;
+        }
+        #list {
+            list-style: none;
+            padding: 0;
+        }
+        .task-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+        .completed {
+            text-decoration: line-through;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+    <h1>List</h1>
+    
+    <div id="cont">
+        <input type="text" id="inp" >
+        <button id="btn">Ajouter</button>
+    </div>
+    
+    <ul id="list"></ul>
+
+    <script src="script.js"></script>
+</body>
+</html>
